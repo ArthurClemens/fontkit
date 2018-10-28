@@ -27,8 +27,8 @@ export default class Path {
    * @return {string}
    */
   toFunction() {
-    let cmds = this.commands.map(c => `  ctx.${c.command}(${c.args.join(', ')});`);
-    return new Function('ctx', cmds.join('\n'));
+    // let cmds = this.commands.map(c => `  ctx.${c.command}(${c.args.join(', ')});`);
+    // return new Function('ctx', cmds.join('\n'));
   }
 
   /**
