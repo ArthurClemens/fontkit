@@ -10704,18 +10704,16 @@ var Path = function () {
    * a graphics context in order to render the path.
    * @return {string}
    */
-
-
-  Path.prototype.toFunction = function toFunction() {}
-  // let cmds = this.commands.map(c => `  ctx.${c.command}(${c.args.join(', ')});`);
-  // return new Function('ctx', cmds.join('\n'));
-
+  // toFunction() {
+  //   let cmds = this.commands.map(c => `  ctx.${c.command}(${c.args.join(', ')});`);
+  //   return new Function('ctx', cmds.join('\n'));
+  // }
 
   /**
    * Converts the path to an SVG path data string
    * @return {string}
    */
-  ;
+
 
   Path.prototype.toSVG = function toSVG() {
     var cmds = this.commands.map(function (c) {
